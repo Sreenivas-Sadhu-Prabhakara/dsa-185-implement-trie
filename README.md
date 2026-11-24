@@ -12,6 +12,13 @@ Each node owns a 26-slot child array (one per letter) and an `isWord` flag. Inse
 
 **Complexity:** all operations O(len(key)); space O(total characters).
 
+## Visual walkthrough
+
+Read the picture top to bottom — each numbered frame is one moment of the algorithm
+running on this repo's test example.
+
+![Step-by-step visual walkthrough](viz.svg)
+
 ## Run
 
     go test ./...   # verify

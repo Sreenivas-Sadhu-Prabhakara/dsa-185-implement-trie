@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="457" viewBox="0 0 760 457" role="img" aria-label="Step-by-step visual walkthrough">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="context-stroke"/></marker></defs>
+<rect x="1.0" y="1.0" width="758.0" height="455.0" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" fill="#1e293b" text-anchor="start" font-weight="600">Trie — one letter per edge, a flag where words end</text>
+<circle cx="35.0" cy="74.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="78.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">1</text>
+<text x="56.0" y="79.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Insert "apple": each character descends one level, creating nodes as needed; the</text>
+<text x="56.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">last node gets an END flag (apple ✓, but "app" is only a path, not a word).</text>
+<rect x="24.0" y="114.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="51.0" y="137.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">•</text>
+<line x1="78.0" y1="132.0" x2="102.0" y2="132.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="108.0" y="114.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="135.0" y="137.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">a</text>
+<line x1="162.0" y1="132.0" x2="186.0" y2="132.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="192.0" y="114.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="219.0" y="137.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">p</text>
+<line x1="246.0" y1="132.0" x2="270.0" y2="132.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="276.0" y="114.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="303.0" y="137.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">p</text>
+<line x1="330.0" y1="132.0" x2="354.0" y2="132.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="360.0" y="114.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="387.0" y="137.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">l</text>
+<line x1="414.0" y1="132.0" x2="438.0" y2="132.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="444.0" y="114.0" width="54.0" height="36.0" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<text x="471.0" y="137.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">e</text>
+<line x1="492.0" y1="132.0" x2="514.0" y2="132.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="526.0" y="137.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#64748b" text-anchor="middle">∅</text>
+<line x1="24.0" y1="164.0" x2="736.0" y2="164.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="184.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="188.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">2</text>
+<text x="56.0" y="189.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">search("app") walks a-p-p fine but the node has NO end flag → false.</text>
+<text x="56.0" y="208.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">startsWith("app") asks only 'does the path exist?' → true. Same walk, different</text>
+<text x="56.0" y="227.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">final question.</text>
+<text x="72.0" y="262.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end">queries</text>
+<rect x="84.0" y="243.0" width="198.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="183.0" y="262.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">search(apple) → true</text>
+<rect x="292.0" y="243.0" width="279.0" height="28.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="431.5" y="262.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">search(app) → false — no flag</text>
+<rect x="84.0" y="279.0" width="216.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="192.0" y="298.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">startsWith(app) → true</text>
+<line x1="24.0" y1="323.0" x2="736.0" y2="323.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="343.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="347.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">3</text>
+<text x="56.0" y="348.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Every operation is O(word length) — independent of how many words are stored. The</text>
+<text x="56.0" y="367.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">children map (or 26-array) per node trades memory for that guarantee.</text>
+<text x="72.0" y="402.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end">costs</text>
+<rect x="84.0" y="383.0" width="279.0" height="28.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="223.5" y="402.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">insert/search/prefix → O(len)</text>
+<text x="380.0" y="439.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">github.com/Sreenivas-Sadhu-Prabhakara · dsa series</text>
+</svg>
